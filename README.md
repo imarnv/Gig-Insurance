@@ -126,27 +126,9 @@ The system recommends the right tier each Sunday based on the upcoming week's we
 ---
 
 ## System Architecture
-<img width="680" height="520" alt="Image" src="https://github.com/user-attachments/assets/7e967f77-918f-4cca-8012-700a54bb332d" />
+
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        EXPERIENCE LAYER                         │
-│  Worker PWA (React)  │  Admin Dashboard  │  WhatsApp Bot        │
-└──────────────────────────────┬──────────────────────────────────┘
-                               │
-┌──────────────────────────────▼──────────────────────────────────┐
-│              API GATEWAY — Node.js / Express                    │
-│     Auth · Rate limiting · JWT · Route dispatch                 │
-└──────┬──────────────────┬──────────────────┬────────────────────┘
-       │                  │                  │
-┌──────▼──────┐  ┌────────▼────────┐  ┌─────▼────────────────────┐
-│ Earnings    │  │  Zone Risk      │  │  Fraud Engine            │
-│ DNA (LSTM)  │  │  MZRI (XGBoost) │  │  (Isolation Forest)      │
-└──────┬──────┘  └────────┬────────┘  └─────┬────────────────────┘
-       │                  │                  │
-┌──────▼──────────────────▼──────────────────▼────────────────────┐
-│                         DATA LAYER                              │
-│  TimescaleDB │ PostgreSQL │ Redis │ Kafka │ External APIs       │
-└─────────────────────────────────────────────────────────────────┘
+<img width="680" height="520" alt="Image" src="https://github.com/user-attachments/assets/7e967f77-918f-4cca-8012-700a54bb332d" />
 ```
 
 ---
