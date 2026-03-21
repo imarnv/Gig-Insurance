@@ -870,4 +870,30 @@ Got it — here’s the corrected version **without serial numbers**, clean and 
 
 ---
 
-# 🎥 Video Script (2-Min Guide)
+# 🎥 Video Script
+
+https://drive.google.com/file/d/1KztPhToP2yyT2GnlpnVnSpjqRzTuW3W1/view?usp=sharing
+
+---
+
+# 🎮 How to Run the Prototype
+
+To run the SurakshaPay prototype on your local machine, follow these steps:
+
+1.  **Navigate to the prototype directory:**
+    ```bash
+    cd prototype
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Access the application:**
+    Open your browser and navigate to the URL shown in your terminal (usually `http://localhost:5173`).
